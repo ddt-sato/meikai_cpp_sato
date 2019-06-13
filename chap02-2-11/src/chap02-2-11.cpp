@@ -18,7 +18,9 @@ using namespace std;
 int main()
 {
 	//キーボードから入力される3つの値を格納する変数を用意する。
-	int firstValue, secondValue, thirdValue;
+	int firstValue = 0;
+	int secondValue = 0;
+	int thirdValue = 0;
 
 	//一つ目の整数値の入力を促す為にcoutで画面に「一つ目の整数値：」と表示。
 	cout << "一つ目の整数値：";
@@ -39,7 +41,8 @@ int main()
 	cin >> thirdValue;
 
 	//中央値を格納する変数と、一つ目と二つ目の内大きい方の値を格納する退避用の変数を用意する。
-	int centerValue, temporaryValue;
+	int centerValue = 0;
+	int bigValue = 0;
 
 	//まず一つ目と二つ目のどちらの値が大きいかを判別する為、if文を使用する。
 	if (firstValue < secondValue)
@@ -47,12 +50,12 @@ int main()
 		//後続のif文で三つ目と大小比較を行う為、小さい方の値である一つ目の値を中央値用の変数に格納する。
 		centerValue = firstValue;
 		//後続のif文で三つ目と大小比較を行う為、大きい方の値である二つ目の値を一時退避用の変数に格納する。
-		temporaryValue = secondValue;
+		bigValue = secondValue;
 	}else{
 		//後続のif文で三つ目と大小比較を行う為、小さい方の値である二つ目の値を中央値用の変数に格納する。
 		centerValue = secondValue;
 		//後続のif文で三つ目と大小比較を行う為、大きい方の値である一つ目の値を一時退避用の変数に格納する。
-		temporaryValue = firstValue;
+		bigValue = firstValue;
 	}
 
 	//上記条件にて大きかった方と三つ目のどちらの値が大きいかを判別する為、if文を使用する。
@@ -60,10 +63,10 @@ int main()
 	if (centerValue < thirdValue)
 	{
 		//中央値変数の値が最小である為、三つ目の変数と一時退避変数を比較する。
-		if (temporaryValue < thirdValue)
+		if (bigValue < thirdValue)
 		{
 			//中央値変数＜一時退避変数＜三つ目の変数が成り立つ為、一時退避変数の値を中央値変数へ格納する。
-			centerValue = temporaryValue;
+			centerValue = bigValue;
 		}else{
 			//中央値変数＜三つ目の変数＜一時退避変数が成り立つ為、三つ目の変数の値を中央値変数へ格納する。
 			centerValue = thirdValue;
