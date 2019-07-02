@@ -34,13 +34,13 @@ int main()
 	cin >> secondValue;
 
 	//一つ目の値の方が二つ目の値より小さかった場合その変数の中身を入れ替える処理をする必要がある為、if文を利用する。
-	if (firstValue < secondValue)
-	{
+	if (firstValue < secondValue) {
 		//一つ目の値を保持する為に、変数を用意し一つ目の値を格納する。
 		int exchangeValue = firstValue;
 
-
+		//最後にfirstValueに入っている値を大きい方の値として画面に表示させる為、二つ目の値をfirstValueへ格納する。
 		firstValue = secondValue;
+		//secondValueは小さいほうの値として表示させる為退避した一つ目の値をsecondValueへ格納する。
 		secondValue = exchangeValue;
 	}
 
