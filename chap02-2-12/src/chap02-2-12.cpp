@@ -43,7 +43,7 @@ int main()
 		//同じ値であることを確認する為に「二つの値は同じです。」と画面表示する。
 		cout << "二つの値は同じです。\n";
 
-	}else{
+	} else {
 		//一つ目の値と二つ目の値の大小を比較する為if文とelseを利用する。
 		if (firstValue < secondValue)
 		{
@@ -51,7 +51,7 @@ int main()
 			minimumValue = firstValue;
 			//二つ目の値の方が大きい為、大きい方の値を格納する変数へ二つ目の値を格納する。
 			maxValue = secondValue;
-		}else{
+		} else {
 			//二つ目の値の方が小さい為、小さい方の値を格納する変数へ二つ目の値を格納する。
 			minimumValue = secondValue;
 			//一つ目の値の方が大きい為、大きい方の値を格納する変数へ一つ目の値を格納する。
