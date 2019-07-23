@@ -40,7 +40,8 @@ int main()
 
 		//最後にfirstValueに入っている値を大きい方の値として画面に表示させる為、二つ目の値をfirstValueへ格納する。
 		firstValue = secondValue;
-		//secondValueは小さいほうの値として表示させる為退避した一つ目の値をsecondValueへ格納する。
+
+		//secondValueは小さいほうの値として表示させる為、退避した一つ目の値をsecondValueへ格納する。
 		secondValue = exchangeValue;
 	}
 
