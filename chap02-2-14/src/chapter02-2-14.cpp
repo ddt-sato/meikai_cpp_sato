@@ -36,7 +36,9 @@ int main()
 		case 0: cout << "グー\n";   break;
 		//変数の値が1の時に画面へ「チョキ」と表示させる為caseを用い、他の文字を出力させない様breakでswitch文から抜け出す。
 		case 1: cout << "チョキ\n"; break;
-		//変数の値が2の時に画面へ「パー」と表示させる為caseを用いる。
+		//変数の値が2の時に画面へ「パー」と表示させる為caseを用い、他の文字を出力させない様breakでswitch文から抜け出す。
 		case 2: cout << "パー\n";   break;
+		//上記のいずれにも当てはまらなかった場合の為に、defaultを用いてエラーと表示させる。
+		default : cout << "エラー\n"; break;
 	}
 }
