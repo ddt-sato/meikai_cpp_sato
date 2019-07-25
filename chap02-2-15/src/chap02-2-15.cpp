@@ -32,21 +32,36 @@ int main()
 
 	//変数の値によって出力させる文言を変更する為、switch文を使用する。
 	switch (randValue) {
-	    //変数の値が0の時に画面へ「大吉」と表示させる為caseを用い、他の文字を出力させない様breakでswitch文から抜け出す。
-		case 0: cout << "大吉\n"; break;
-		//変数の値が1の時に画面へ「中吉」と表示させる為caseを用い、他の文字を出力させない様breakでswitch文から抜け出す。
-		case 1: cout << "中吉\n"; break;
-		//変数の値が2の時に画面へ「小吉」と表示させる為caseを用い、他の文字を出力させない様breakでswitch文から抜け出す。
-		case 2: cout << "小吉\n"; break;
-		//変数の値が3の時に画面へ「吉」と表示させる為caseを用い、他の文字を出力させない様breakでswitch文から抜け出す。
-		case 3: cout << "吉\n";   break;
-		//変数の値が4の時に画面へ「末吉」と表示させる為caseを用い、他の文字を出力させない様breakでswitch文から抜け出す。
-		case 4: cout << "末吉\n"; break;
-		//変数の値が5の時に画面へ「凶」と表示させる為caseを用い、他の文字を出力させない様breakでswitch文から抜け出す。
-		case 5: cout << "凶\n";   break;
-		//変数の値が6の時に画面へ「大凶」と表示させる為caseを用い、他の文字を出力させない様breakでswitch文から抜け出す。
-		case 6: cout << "大凶\n"; break;
+	    //変数の値が0の時に画面へ「大吉」と表示させる為caseを用いる。
+		case 0: cout << "大吉\n";
+		    //他の文字を出力させない様breakでswitch文から抜け出す。
+			break;
+		//変数の値が1の時に画面へ「中吉」と表示させる為caseを用いる。
+		case 1: cout << "中吉\n";
+			//他の文字を出力させない様breakでswitch文から抜け出す。
+			break;
+		//変数の値が2の時に画面へ「小吉」と表示させる為caseを用いる。
+		case 2: cout << "小吉\n";
+			//他の文字を出力させない様breakでswitch文から抜け出す。
+			break;
+		//変数の値が3の時に画面へ「吉」と表示させる為caseを用いる。
+		case 3: cout << "吉\n";
+			//他の文字を出力させない様breakでswitch文から抜け出す。
+			break;
+		//変数の値が4の時に画面へ「末吉」と表示させる為caseを用いる。
+		case 4: cout << "末吉\n";
+			//他の文字を出力させない様breakでswitch文から抜け出す。
+			break;
+		//変数の値が5の時に画面へ「凶」と表示させる為caseを用いる。
+		case 5: cout << "凶\n";
+			//他の文字を出力させない様breakでswitch文から抜け出す。
+			break;
+		//変数の値が6の時に画面へ「大凶」と表示させる為caseを用いる。
+		case 6: cout << "大凶\n";
+			//他の文字を出力させない様breakでswitch文から抜け出す。
+			break;
 		//上記のいずれにも当てはまらなかった場合の為に、defaultを用いてエラーと表示させる。
-		default : cout << "エラー\n"; break;
+		default : cout << "エラー\n";
+			break;
 	}
 }
