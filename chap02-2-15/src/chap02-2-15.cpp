@@ -44,7 +44,9 @@ int main()
 		case 4: cout << "末吉\n"; break;
 		//変数の値が5の時に画面へ「凶」と表示させる為caseを用い、他の文字を出力させない様breakでswitch文から抜け出す。
 		case 5: cout << "凶\n";   break;
-		//変数の値が6の時に画面へ「大凶」と表示させる為caseを用いる。
+		//変数の値が6の時に画面へ「大凶」と表示させる為caseを用い、他の文字を出力させない様breakでswitch文から抜け出す。
 		case 6: cout << "大凶\n"; break;
+		//上記のいずれにも当てはまらなかった場合の為に、defaultを用いてエラーと表示させる。
+		default : cout << "エラー\n"; break;
 	}
 }
