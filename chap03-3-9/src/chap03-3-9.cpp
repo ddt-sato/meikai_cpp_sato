@@ -26,20 +26,20 @@ int main()
 	//ループさせる為。
 	do {
 
-	//整数値の入力を促す為。
-	cout << "正の整数値：";
+		//整数値の入力を促す為。
+		cout << "正の整数値：";
 
-	//入力した値を格納する為。
-	cin >> inputValue;
+		//入力した値を格納する為。
+		cin >> inputValue;
 
 	//正の整数値ではない場合に再入力させる為。
 	} while(inputValue <= 0);
 
 	//入力値の回数ループさせる為。
-	for (int i = 0; i <= inputValue; inputValue--)
+	for (int i = 0; i <= inputValue; i++)
 	{
 		//値を表示させる為。
-		cout << inputValue << '\n';
+		cout << inputValue - i << '\n';
 
 	}
 }
