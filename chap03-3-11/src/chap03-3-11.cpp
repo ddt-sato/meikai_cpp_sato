@@ -39,7 +39,7 @@ int main()
 	int sumValue = 0;
 
 	//入力値までループさせる為。
-	for (int i = 0; i <= inputValue; i++)
+	for (int i = 1; i <= inputValue; i++)
 	{
 
 		//ループ回数を加算する為。
