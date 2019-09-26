@@ -29,13 +29,13 @@ int main()
 
 			//10未満の場合以下の処理を実行する為。
 			if (calculationResult < 10)
-
+			{
 				//画面に空白文字を表示する為。
 				cout << " ";
-			{
-				//画面に結果を表示させる為。
-				cout << " " << calculationResult;
 			}
+
+			//画面に結果を表示させる為。
+			cout << " " << calculationResult;
 		}
 		cout << '\n';
 	}
