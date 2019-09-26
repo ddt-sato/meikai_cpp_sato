@@ -22,23 +22,41 @@ int main()
 	//値格納用の変数が必要な為。
 	int minimumHeight, maxHeight, plusHeight, averageWeight;
 
-	//開始値の入力を促す為。
-	cout << "何cmから：";
+	//以下の処理を繰返し実行する為。
+	do
+	{
+		//開始値の入力を促す為。
+		cout << "何cmから：";
 
-	//入力した値を格納する為。
-	cin >> minimumHeight;
+		//入力した値を格納する為。
+		cin >> minimumHeight;
+	}
+	//0以下の場合入力し直させる為。
+	while(minimumHeight <= 0);
 
-	//終了値の入力を促す為。
-	cout << "何cmまで：";
+	//以下の処理を繰返し実行する為。
+	do
+	{
+		//終了値の入力を促す為。
+		cout << "何cmまで：";
 
-	//入力した値を格納する為。
-	cin >> maxHeight;
+		//入力した値を格納する為。
+		cin >> maxHeight;
+	}
+	//開始値以下の場合入力し直させる為。
+	while(maxHeight <= minimumHeight);
 
-	//増分の入力を促す為。
-	cout << "何cmごと：";
+	//以下の処理を繰返し実行する為。
+	do
+	{
+		//増分の入力を促す為。
+		cout << "何cmごと：";
 
-	//入力した値を格納する為。
-	cin >> plusHeight;
+		//入力した値を格納する為。
+		cin >> plusHeight;
+	}
+	//0以下の場合入力し直させる為。
+	while(plusHeight <= 0);
 
 	//画面表示させる為。
 	cout << "身長　標準体重\n";
@@ -54,6 +72,6 @@ int main()
 		cout << " " << minimumHeight << "　" << averageWeight << "\n";
 
 		//入力した増分を加算する為。
-		minimumHeight = minimumHeight + plusHeight;
+		minimumHeight += plusHeight;
 	}
 }
