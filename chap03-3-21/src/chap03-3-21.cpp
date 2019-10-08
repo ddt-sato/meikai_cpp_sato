@@ -31,8 +31,6 @@ int main()
 	//入力値を格納する為。
 	cin >> pyramidStep;
 
-
-
 	//以下の処理を繰返し実行する為。
 	for (int i = 1; i <= pyramidStep; i++)
 	{
