@@ -31,8 +31,6 @@ int main()
 	//入力値を格納する為。
 	cin >> pyramidStep;
 
-
-
 	//以下の処理を繰返し実行する為。
 	for (int i = 1; i <= pyramidStep; i++)
 	{
@@ -44,7 +42,7 @@ int main()
 		}
 
 		//以下の処理を繰返し実行する為。
-		for (int k = 1; k <= (pyramidStep - i) * 2 + 1; k++)
+		for (int j = 1; j <= (pyramidStep - i) * 2 + 1; j++)
 		{
 			//画面に段数(10以降は1の位)を表示する為。
 			cout << i % 10;
