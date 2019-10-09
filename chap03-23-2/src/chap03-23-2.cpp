@@ -18,13 +18,15 @@ using namespace std;
 //============================================================================
 int main() {
 	//定数を定義する為。
-	const int limitValue = 1000;
+	const int LIMIT_VALUE = 1000;
+	const string FIRST_COMMENT = "整数を加算、平均を算出します。\n何個計算しますか：";
+	const string LIMIT_COMMENT = "合計値が1000を超えました。\n最後の数値は無視します。";
 
 	//入力値を格納する変数が必要な為。
 	int countValue;
 
 	//処理を確認する為。
-	cout << "整数を加算、平均を算出します。\n何個計算しますか：";
+	cout << FIRST_COMMENT;
 
 	//入力値を格納する為。
 	cin >> countValue;
@@ -45,9 +47,9 @@ int main() {
 		cin >> targetValue;
 
 		//条件に当てはまった場合のみ処理をする為。
-		if (sumValue + targetValue > limitValue) {
+		if (sumValue + targetValue > LIMIT_VALUE) {
 			//画面表示させる為。
-			cout << "合計値が1000を超えました。\n最後の数値は無視します。";
+			cout << LIMIT_COMMENT;
 
 			//ループを抜け出す為。
 			break;
