@@ -17,6 +17,9 @@ using namespace std;
 //備考　　　　　　：List3-16を書き換え
 //============================================================================
 int main() {
+	//定数を定義する為。
+	const int limitValue = 1000;
+
 	//入力値を格納する変数が必要な為。
 	int countValue;
 
@@ -42,7 +45,7 @@ int main() {
 		cin >> targetValue;
 
 		//条件に当てはまった場合のみ処理をする為。
-		if (sumValue + targetValue > 1000) {
+		if (sumValue + targetValue > limitValue) {
 			//画面表示させる為。
 			cout << "合計値が1000を超えました。\n最後の数値は無視します。";
 
