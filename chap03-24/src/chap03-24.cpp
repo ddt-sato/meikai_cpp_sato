@@ -18,11 +18,15 @@ using namespace std;
 //============================================================================
 int main()
 {
+	//定数定義する為。
+	const string FIRST_COMMENT = "整数を加算、平均を算出します。\n何個計算しますか：";
+	const string SKIP_COMMENT = "負の数は計算しません。\n";
+
 	//入力値を格納する変数が必要な為。
 	int repeatValue;
 
 	//処理を確認する為。
-	cout << "整数を加算、平均を算出します。\n何個計算しますか：";
+	cout << FIRST_COMMENT;
 
 	//入力値を格納する為。
 	cin >> repeatValue;
@@ -48,7 +52,7 @@ int main()
 		if (targetValue < 0)
 		{
 			//画面に表示させる為。
-			cout << "負の数は計算しません。\n";
+			cout << SKIP_COMMENT;
 
 			//処理をスキップする為。
 			continue;
