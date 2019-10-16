@@ -29,6 +29,9 @@ int main() {
 
 	//定数を定義する為。
 	const int LIMIT_VALUE = 5;
+	const string SMALL_COMMENT = "もっと小さな数。\n";
+	const string BIG_COMMENT = "もっと大きな数。\n";
+	const string ANSWER_COMMENT = "正解です。\n";
 
 	//合計と平均を格納する変数が必要な為。
 	int randomValue = rand() % 100;
@@ -40,7 +43,7 @@ int main() {
 	int answerValue;
 
 	//処理を確認する為。
-	cout << "数当てゲーム開始\n0～99の数を" << LIMIT_VALUE << "までに当ててください。\n";
+	cout << "数当てゲーム開始\n0～99の数を" << LIMIT_VALUE << "回までに当ててください。\n";
 
 	//以下の処理を繰返し実行する為。
 	do
@@ -58,7 +61,7 @@ int main() {
 		if (answerValue > randomValue)
 		{
 			//入力値より小さい値の入力を促す為。
-			hintComment = "もっと小さな数。\n";
+			hintComment = SMALL_COMMENT;
 
 			//不正解数を加算する為。
 			countValue++;
@@ -67,7 +70,7 @@ int main() {
 		else if (answerValue < randomValue)
 		{
 			//入力値より大きい値の入力を促す為。
-			hintComment = "もっと大きな数。\n";
+			hintComment = BIG_COMMENT;
 
 			//不正解数を加算する為。
 			countValue++;
@@ -90,7 +93,7 @@ int main() {
 	while (answerValue != randomValue);
 
 	//正解したことを確認する為。
-	cout << "正解です。\n";
+	cout << ANSWER_COMMENT;
 
 	//不正解時ここまで処理を飛ばす為。
 	Exit:
