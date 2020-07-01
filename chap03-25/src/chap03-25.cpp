@@ -33,7 +33,7 @@ int main() {
 	const string BIG_COMMENT = "もっと大きな数。\n";
 	const string ANSWER_COMMENT = "正解です。\n";
 
-	//0～99のランダムな値が必要な為。
+	//プレイヤーが求める答えが必要な為。
 	int randomValue = rand() % 100;
 
 	//入力回数を数える変数が必要な為。
