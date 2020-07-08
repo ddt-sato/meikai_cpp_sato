@@ -38,9 +38,12 @@ int main() {
 	const string WIN_COMMENT = "勝ち\n";
 	const string LOSE_COMMENT = "負け\n";
 	const string DRAW_COMMENT = "あいこ\n";
-	const string HAND_STONE = "グー";
-	const string HAND_SCISSORS = "チョキ";
-	const string HAND_PAPER = "パー";
+	const string INFO_STONE = "グー";
+	const string INFO_SCISSORS = "チョキ";
+	const string INFO_PAPER = "パー";
+	const int HAND_STONE = 1;
+	const int HAND_SCISSORS = 2;
+	const int HAND_PAPER = 3;
 
 	//入力値を格納する変数が必要な為。
 	int yourHand = 0;
@@ -66,16 +69,16 @@ int main() {
 		switch(yourHand)
 		{
 			//入力値が1の場合グーを表示させる為。
-			case 1 :
-				yourInfo = HAND_STONE;
+			case HAND_STONE :
+				yourInfo = INFO_STONE;
 				break;
 			//入力値が2の場合チョキを表示させる為。
-			case 2 :
-				yourInfo = HAND_SCISSORS;
+			case HAND_SCISSORS :
+				yourInfo = INFO_SCISSORS;
 				break;
 			//入力値が3の場合パーを表示させる為。
-			case 3 :
-				yourInfo = HAND_PAPER;
+			case HAND_PAPER :
+				yourInfo = INFO_PAPER;
 				break;
 			//入力値が1～3以外の場合エラーにする為。
 			default :
@@ -88,16 +91,16 @@ int main() {
 		switch(enemyHand)
 		{
 			//ランダム値が1の場合グーを表示させる為。
-			case 1 :
-				enemyInfo = HAND_STONE;
+			case HAND_STONE :
+				enemyInfo = INFO_STONE;
 				break;
 			//ランダム値が2の場合チョキを表示させる為。
-			case 2 :
-				enemyInfo = HAND_SCISSORS;
+			case HAND_SCISSORS :
+				enemyInfo = INFO_SCISSORS;
 				break;
 			//ランダム値が3の場合パーを表示させる為。
-			case 3 :
-				enemyInfo = HAND_PAPER;
+			case HAND_PAPER :
+				enemyInfo = INFO_PAPER;
 				break;
 			//ランダム値が1～3以外の場合エラーにする為。
 			default :
@@ -110,13 +113,13 @@ int main() {
 		cout << "自分：" << yourInfo << "\n相手：" << enemyInfo << "\n結果：";
 
 		//自分パー、相手グーの場合次のif文にあてはめさせる為。
-		if (yourHand == 3 && enemyHand == 1)
+		if (yourHand == HAND_PAPER && enemyHand == HAND_STONE)
 		{
 			//値をパー < グーにする為。
 			yourHand = 0;
 		}
 		//自分グー、相手パーの場合次のif文にあてはめさせる為。
-		else if (yourHand == 1 && enemyHand == 3)
+		else if (yourHand == HAND_STONE && enemyHand == HAND_PAPER)
 		{
 			//値をパー < グーにする為。
 			enemyHand = 0;
