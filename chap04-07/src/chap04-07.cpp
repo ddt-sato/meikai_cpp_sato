@@ -21,11 +21,11 @@ using namespace std;
 int main()
 {
 	//結果を画面に表示させる為。
-	cout << "float型の変数のサイズ：" << typeid(float).name() << "\n";
+	cout << "float型の型情報：" << typeid(float).name() << "\n";
 
 	//結果を画面に表示させる為。
-	cout << "double型の変数のサイズ：" << typeid(double).name() << "\n";
+	cout << "double型の型情報：" << typeid(double).name() << "\n";
 
 	//結果を画面に表示させる為。
-	cout << "long double型の変数のサイズ：" << typeid(long double).name() << "\n";
+	cout << "long double型の型情報：" << typeid(long double).name() << "\n";
 }
