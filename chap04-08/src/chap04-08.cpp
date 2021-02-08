@@ -31,22 +31,22 @@ int main()
 	//double型変数が必要な為。
 	double secondValue;
 
-	//int+intの結果を画面に表示させる為。
+	//int+intのサイズとタイプを画面に表示させる為。
 	cout << "int + int\n";
 	cout << "　sizeof：" << sizeof(firstValue + firstValue) << "\n";
 	cout << "　typeid：" << typeid(firstValue + firstValue).name() << "\n";
 
-	//double+doubleの結果を画面に表示させる為。
+	//double+doubleのサイズとタイプを画面に表示させる為。
 	cout << "double + double\n";
 	cout << "　sizeof：" << sizeof(secondValue + secondValue) << "\n";
 	cout << "　typeid：" << typeid(secondValue + secondValue).name() << "\n";
 
-	//int+doubleの結果を画面に表示させる為。
+	//int+doubleのサイズとタイプを画面に表示させる為。
 	cout << "int + double\n";
 	cout << "　sizeof：" << sizeof(firstValue + secondValue) << "\n";
 	cout << "　typeid：" << typeid(firstValue + secondValue).name() << "\n";
 
-	//double+intの結果を画面に表示させる為。
+	//double+intのサイズとタイプを画面に表示させる為。
 	cout << "double + int\n";
 	cout << "　sizeof：" << sizeof(secondValue + firstValue) << "\n";
 	cout << "　typeid：" << typeid(secondValue + firstValue).name() << "\n";
