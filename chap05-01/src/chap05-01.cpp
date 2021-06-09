@@ -30,7 +30,4 @@ int main()
 		//値を出力する為。
 		cout << arrayValue[i] << "\n";
 	}
-
-
-
 }
