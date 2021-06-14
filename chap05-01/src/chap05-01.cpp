@@ -18,8 +18,11 @@ using namespace std;
 //============================================================================
 int main()
 {
+	//要素数を定義する為。
+	const int ELEMENT = 5;
+
 	//int型かつ要素数が5つの配列を用意する為。
-	int arrayValue[4];
+	int arrayValue[ELEMENT];
 
 	//5回繰り返す為。
 	for (int i = 0; i < 5; i++){
