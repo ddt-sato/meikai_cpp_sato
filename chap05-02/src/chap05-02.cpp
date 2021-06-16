@@ -28,7 +28,7 @@ int main()
 	double arrayValue[ELEMENT];
 
 	//5回繰り返す為。
-	for (int i = 0; i < 5; i++){
+	for (int i = 0; i < ELEMENT; i++){
 
 		//各要素に値を設定する為。
 		arrayValue[i] = 0.0;
