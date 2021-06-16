@@ -25,10 +25,10 @@ int main()
 	int arrayValue[ELEMENT];
 
 	//5回繰り返す為。
-	for (int i = 0; i < 5; i++){
+	for (int i = 0; i < ELEMENT; i++){
 
 		//各要素に値を設定する為。
-		arrayValue[i] = 5 - i;
+		arrayValue[i] = ELEMENT - i;
 
 		//値を出力する為。
 		cout << arrayValue[i] << "\n";
