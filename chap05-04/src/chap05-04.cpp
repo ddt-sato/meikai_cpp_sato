@@ -27,38 +27,31 @@ int main()
 	//要素数を定義する為。
 	const int ELEMENT = 6;
 
-	//double型かつ要素数が5つの配列を用意する為。
+	//int型かつ指定された数の要素を持つ配列を用意する為。
 	int arrayValue[ELEMENT];
 
 	//現在の時刻から乱数の種となる値を設定する為。
 	srand(time(NULL));
 
+	//要素に値を設定する為。
+	arrayValue[0] = rand() % 10 + 1;
+
 	//要素数分繰り返す為。
-	for (int i = 0; i < ELEMENT; i++){
+	for (int i = 1; i < ELEMENT; i++){
 
-		//ループ2回目以降比較をする為。
-		if (i > 0) {
-
-			//処理を繰り返す為。
-			do {
-
-				//要素に値を設定する為。
-				arrayValue[i] = rand() % 10 + 1;
-
-				//値を出力する為。
-				cout << "◆比較\n";
-				cout << "　arrayValue[" << i-1 << "]：" << arrayValue[i-1] << "\n";
-				cout << "　arrayValue[" << i << "]：" << arrayValue[i] << "\n";
-
-			//値が同じ場合繰り返す為。
-			} while (arrayValue[i] == arrayValue[i-1]);
-
-		//ループ1回目は不要な為。
-		} else {
+		//処理を繰り返す為。
+		do {
 
 			//要素に値を設定する為。
 			arrayValue[i] = rand() % 10 + 1;
-		}
+
+			//値を出力する為。
+			cout << "◆比較\n";
+			cout << "　arrayValue[" << i-1 << "]：" << arrayValue[i-1] << "\n";
+			cout << "　arrayValue[" << i << "]：" << arrayValue[i] << "\n";
+
+		//値が同じ場合繰り返す為。
+		} while (arrayValue[i] == arrayValue[i-1]);
 	}
 
 	//値を出力する為。
