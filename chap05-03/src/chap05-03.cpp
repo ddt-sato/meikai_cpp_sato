@@ -27,13 +27,13 @@ int main()
 	//要素数を定義する為。
 	const int ELEMENT = 6;
 
-	//double型かつ要素数が5つの配列を用意する為。
+	//int型かつ指定の数の要素の配列を用意する為。
 	int arrayValue[ELEMENT];
 
 	//現在の時刻から乱数の種となる値を設定する為。
 	srand(time(NULL));
 
-	//5回繰り返す為。
+	//要素数分繰り返す為。
 	for (int i = 0; i < ELEMENT; i++){
 
 		//各要素に値を設定する為。
