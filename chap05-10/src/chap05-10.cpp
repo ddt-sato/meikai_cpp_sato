@@ -24,7 +24,7 @@ int main()
 	const int COLUMN = 5;
 
 	//int型かつ指定された数の要素を持つ多次元配列を用意する為。
-	int arrayValue[LINE][COLUMN];
+	int arrayValue[LINE][COLUMN] = {0};
 
 	//積を格納する変数を用意する為。
 	int productValue = 0;
